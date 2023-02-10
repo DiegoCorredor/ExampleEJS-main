@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('./templates/header')%>
+</head>
+
+<body>
+
+    <div class="container mx-5 my-5 text-center">
+        <div class="card">
+            <div class="card-header">
+                <h1>Nuevo Plato</h1>
+            </div>
+            <div class="card-body text-center">
+                <form action="/" method="post">
+                    <div class="mb-3 text-start w-50">
+                        <label for="id" class="form-label">Id plato</label>
+                        <input type="number" class="form-control" id="id" name="id" placeholder="0000">
+                    </div>
+                    <div class="mb-3 text-start w-50">
+                        <label for="name" class="form-label">Nombre del plato</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Papitas fritas">
+                    </div>
+                    <div class="mb-3 text-start w-50">
+                        <label for="calories" class="form-label">Calorias del plato</label>
+                        <input type="number" class="form-control" id="calories" name="calories" placeholder="9999">
+                    </div>
+                    <div class="mb-3 text-start w-50">
+                        <input type="radio" class="form-check-input" id="isVegetarianTrue" name="isVegetarian" value="true">
+                        <label for="isVegetarianTrue" class="form-label">Vegetariano</label>
+                        <input type="radio" class="form-check-input" id="isVegetarianFalse" name="isVegetarian" value="false">
+                        <label for="isVegetarianTrue" class="form-label">No Vegetariano</label>
+                    </div>
+                    <div class="mb-3 text-start w-50">
+                        <label for="value" class="form-label">Costo del plato</label>
+                        <input type="number" class="form-control" id="value" name="value" placeholder="99999">
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-50">Enviar Datos</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%-include('./templates/footer')%>
+</body>
+
+</html>
